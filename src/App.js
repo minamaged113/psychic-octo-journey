@@ -10,7 +10,9 @@ function App() {
   return (
     <div className="App">
       <header>Mina's ToDo List</header>
-      <Form />
+      {/* pass the function to the Form component 
+      This will be accessed from Form component*/}
+      <Form setInputText={setInputText}/>
       <TodoList />
     </div>
   );
